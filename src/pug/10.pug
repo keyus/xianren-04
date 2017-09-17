@@ -1,0 +1,17 @@
+extends share/layouts
+include  module/template
+
+block content
+
+    div.login-app
+        div.login-form
+            div.login-item
+                span.icon
+                    img(src='./images/icon-user.png')
+                input(type='text' placeholder='请输入您的帐号')
+            div.login-item
+                span.icon
+                    img(src='./images/icon-password.png')
+                input(type='passsword' placeholder='请输入您的密码')
+            div.login-enter
+                a 确 认

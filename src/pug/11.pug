@@ -1,0 +1,28 @@
+extends share/layouts
+include  module/template
+
+block content
+    +tpl-top-bar('联系客服')
+    div.h80
+
+    div.message-list
+        div.message-item
+            div.personimg
+                span.icon-toubugerenzhongxin
+            div.message-item-box hi,你他妈在干啥？
+                span.shape
+
+        div.message-item.message-right
+            div.personimg
+                span.icon-kefu
+            div.message-item-box 妹的，云你妹的
+                span.shape
+
+
+    div.memeber-input
+        textarea(placeholder="请输入留言")
+    div.message-list-enter
+        a(href="javascript:;") 确认发布
+
+    +tpl-tool-bar
+

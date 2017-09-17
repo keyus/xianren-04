@@ -1,0 +1,10 @@
+extends share/layouts
+include  module/template
+
+block content
+    +tpl-top-bar('公告中心')
+    div.h80
+    +tpl-notice-list
+    div.h80
+    +tpl-tool-bar
+

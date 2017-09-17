@@ -1,0 +1,16 @@
+extends share/layouts
+include  module/template
+
+block content
+    +tpl-top-bar('公告详情')
+    div.h80
+    div.notice-content
+        h1 【系统名字】某某系统上线
+        div.time
+            span 2017/08/15
+            span 10:50:25
+        div.notice-content-body
+            | 2017年7月23日 - 前面的话为什么要引入pug,pug有什么特别之处呢?变量的真实值
+    div.h80
+    +tpl-tool-bar
+

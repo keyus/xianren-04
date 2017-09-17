@@ -1,0 +1,21 @@
+extends share/layouts
+include  module/template
+
+block content
+    +tpl-top-bar('帐户信息')
+    div.h80
+
+    div.user-form
+        div.user-form-item
+            input(type='text' placeholder="输入微信支付帐号")
+        div.user-form-item
+            input(type='text' placeholder="输入支付宝帐号")
+        div.user-form-item
+            input(type='text' placeholder="输入开户银行")
+        div.user-form-item
+            input(type='text' placeholder="输入银行卡号")
+        div.user-form-submit
+            a.enter 确 认
+
+    +tpl-tool-bar
+

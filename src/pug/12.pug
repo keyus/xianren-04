@@ -1,0 +1,13 @@
+extends share/layouts
+include  module/template
+
+block content
+    +tpl-top-bar('团队中心')
+    div.h80
+    +tpl-line-text
+    +tpl-team-list
+
+
+    div.h80
+    +tpl-tool-bar
+

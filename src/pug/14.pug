@@ -1,0 +1,73 @@
+extends share/layouts
+include  module/template
+
+block content
+
+    div.app
+        div.index-notice
+            img(src='./images/index-notice.png')
+
+        div.index-menu
+            a.index-menu-m
+                span.title M币
+                span.num 10000.00
+            a.index-menu-q
+                span.title Q种子
+                span.num 10000.00
+            a.index-menu-b
+                span.title 波特种子
+                span.num 10000.00
+
+        div.index-cell
+            ul
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell1.png")
+                        span 交易大厅
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell2.png")
+                        span 我的精灵
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell3.png")
+                        span M币明细
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell4.png")
+                        span Q种子转帐
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell5.png")
+                        span Q种子明细
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell6.png")
+                        span 团队中心
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell7.png")
+                        span 公告中心
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell8.png")
+                        span 联系客服
+                li
+                    a
+                        span.img
+                            img(src="./images/index-cell9.png")
+                        span 退出
+
+
+
+        div.h80
+    +tpl-tool-bar
+

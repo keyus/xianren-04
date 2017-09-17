@@ -1,0 +1,20 @@
+extends share/layouts
+include  module/template
+
+block content
+    +tpl-top-bar('Q种子转帐')
+    div.h80
+
+    div.form-zh
+        form
+            div.input-item
+                input(type='text' placeholder='请输入对方帐号')
+            div.input-item
+                input(type='text' placeholder='请输入转入数量')
+            div.form-zh-tip
+                img(src='./images/zhuan.png' alt="钻石")
+                | 当前Q种子剩余50颗
+            div.form-btn
+                a 确认买入
+    +tpl-tool-bar
+

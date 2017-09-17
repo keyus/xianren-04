@@ -1,0 +1,35 @@
+extends share/layouts
+include  module/template
+
+block content
+    +tpl-top-bar('我的精灵')
+    div.h50
+
+    //也许这是一张背景,你可放入一背图片
+    div.mycenter(style="background-image: url('')")
+
+    div.mycenter-list
+        div.mycenter-list-item
+            img(src='./images/zhuan.png')
+            span
+                label 今日挖矿 :
+                | 5456123
+        div.mycenter-list-item
+            img(src='./images/xin.png')
+            span
+                label 精灵等级 :
+                | 等级一
+        div.mycenter-list-item
+            img(src='./images/bit.png')
+            span
+                label 已挖矿数 :
+                | 456123
+        div.mycenter-list-item
+            img(src='./images/bitdai.png')
+            span
+                label 剩余数量 :
+                | 5121
+
+    div.h80
+    +tpl-tool-bar
+
