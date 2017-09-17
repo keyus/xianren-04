@@ -706,13 +706,41 @@
   right: 0;
   top:0;
   bottom: 0;
-
+  padding-top: 130px;
   overflow-y: auto;
 
   .index-notice{
-    padding: 0 1rem;
-    padding-top: 130px;
+    margin: 0 1rem;
+    position: relative;
+    background-image: url("../images/index-notice.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    height: 35px;
+
+
     img{width: 100%}
+    ul{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+      li{
+        height: 35px;
+      }
+    }
+    a{
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 34px;
+      color: #fff;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 0 60px;
+    }
   }
 
   .index-menu{

@@ -9,7 +9,13 @@
   <link href="/css/app.css" rel="stylesheet"></head>
   <body>
     <div class="app">
-      <div class="index-notice"><img src="./images/index-notice.png"></div>
+      <div class="index-notice">
+        <ul>
+          <li><a>通知：精灵上线中</a></li>
+          <li><a>这五年，习近平这样谈文化遗产保护</a></li>
+          <li><a>喜迎十九大</a></li>
+        </ul>
+      </div>
       <div class="index-menu"><a class="index-menu-m"><span class="title">M币</span><span class="num">10000.00</span></a><a class="index-menu-q"><span class="title">Q种子</span><span class="num">10000.00</span></a><a class="index-menu-b"><span class="title">波特种子</span><span class="num">10000.00</span></a></div>
       <div class="index-cell">
         <ul>
@@ -27,5 +33,26 @@
       <div class="h80"></div>
     </div>
     <div class="tool-bar flex-center"><a href="javascript:;"><img src="./images/icon-fire.png" alt="我的"><span>我的</span></a><a href="javascript:;"><img src="./images/icon-message.png" alt="信息"><span>信息</span></a><a href="javascript:;"><img src="./images/icon-kefu.png" alt="客服"><span>客服</span></a><a href="javascript:;"><img src="./images/icon-quit.png" alt="退出"><span>退出</span></a></div>
+    <script>
+      //sorray 直接原生吧
+      !(function () {
+          var notice = document.querySelector('.index-notice ul');
+          setInterval(function () {
+              var notice_item = document.querySelector('.index-notice li:first-child');
+              var a           = notice_item.querySelector('a');
+              var clone       = notice_item.cloneNode();
+              clone.appendChild(a);
+              var timer  = setInterval(function () {
+                  notice_item.style.marginTop =  parseInt(window.getComputedStyle(notice_item).marginTop)  + -2 + 'px';
+                  if(parseInt(window.getComputedStyle(notice_item).marginTop) < -30) {
+                      clearInterval(timer);
+                      notice.removeChild(notice_item);
+                      notice.appendChild(clone);
+                  }
+              },20);
+          },4000)
+      
+      })();
+    </script>
   <script type="text/javascript" src="/js/app.js"></script></body>
 </html>
