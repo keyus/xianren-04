@@ -964,6 +964,19 @@
   .weui-label{
     color: #4a4646;
   }
+  .select-area-menus{
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+    font-size: inherit;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #efeff0;
+    margin-bottom: 10px;
+    padding-left: 15px;
+  }
 }
 
 .self-top{

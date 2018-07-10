@@ -14,9 +14,9 @@
     </div>
     <div class="topbar-space"></div>
     <div class="filter-bar border-bottom">
-      <div class="filter-bar-item"><span class="filter-bar-is">四川</span></div>
-      <div class="filter-bar-item"><span class="filter-bar-is">绵阳</span></div>
-      <div class="filter-bar-item"><span class="filter-bar-is">涪城</span></div>
+      <div class="filter-bar-item"><span class="filter-bar-is select-section-sheng">四川</span></div>
+      <div class="filter-bar-item"><span class="filter-bar-is select-section-shi">绵阳</span></div>
+      <div class="filter-bar-item"><span class="filter-bar-is select-section-qu">涪城</span></div>
     </div>
     <div class="weui-panel weui-panel_access s-list">
       <div class="weui-panel__bd"><a class="weui-media-box weui-media-box_appmsg">
@@ -47,5 +47,131 @@
         <p class="weui-tabbar__label">套餐</p></a><a class="weui-tabbar__item weui-bar__item_on"><span style="display: inline-block;position: relative;"><img class="weui-tabbar__icon" src="./images/tabbar-3.png">
           <!--img.weui-tabbar__icon(src="./images/tabbar-3-active.png")--></span>
         <p class="weui-tabbar__label">我的</p></a></div>
+    <script>
+      // 级联选择器
+      document.querySelector('.select-section-sheng').addEventListener('click', function () {
+          weui.picker([
+              {
+                  label: '广东',
+                  value: 0,
+                  children: [
+                      {
+                          label: '广州',
+                          value: 0,
+                          children: [
+                              {
+                                  label: '海珠',
+                                  value: 0
+                              }, {
+                                  label: '番禺',
+                                  value: 1
+                              }
+                          ]
+                      }, {
+                          label: '佛山',
+                          value: 1,
+                          children: [
+                              {
+                                  label: '禅城',
+                                  value: 0
+                              }, {
+                                  label: '南海',
+                                  value: 1
+                              }
+                          ]
+                      }
+                  ]
+              }, {
+                  label: '广西',
+                  value: 1,
+                  children: [
+                      {
+                          label: '南宁',
+                          value: 0,
+                          children: [
+                              {
+                                  label: '青秀',
+                                  value: 0
+                              }, {
+                                  label: '兴宁',
+                                  value: 1
+                              }
+                          ]
+                      }, {
+                          label: '桂林',
+                          value: 1,
+                          children: [
+                              {
+                                  label: '象山',
+                                  value: 0
+                              }, {
+                                  label: '秀峰',
+                                  value: 1
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ], {
+              depth: 3,
+              defaultValue: [0, 1, 1],
+              onChange: function (result) {
+                  console.log(result);
+              },
+              onConfirm: function (result) {
+                  console.log(result);
+              },
+              id: 'cascadePicker'
+          });
+      });
+      
+      // 级联选择器
+      document.querySelector('.select-section-shi').addEventListener('click', function (e) {
+          var el = e.target;
+          weui.picker([{
+              label: '成都',
+              value: 0
+          }, {
+              label: '眉山',
+              value: 1
+          }], {
+              defaultValue: [0],
+              className: 'custom-classname',
+              onChange: function (result) {
+                  //console.log(item, index);
+                  console.log(result);
+              },
+              onConfirm: function (result) {
+                  console.log(result);
+                  el.innerHTML = result[0].label;
+              },
+              id: 'picker'
+          });
+      });
+      
+      // 级联选择器
+      document.querySelector('.select-section-qu').addEventListener('click', function (e) {
+          var el = e.target;
+          weui.picker([{
+              label: '赔城',
+              value: 0
+          }, {
+              label: '南区',
+              value: 1
+          }], {
+              defaultValue: [0],
+              className: 'custom-classname',
+              onChange: function (result) {
+                  //console.log(item, index);
+                  console.log(result);
+              },
+              onConfirm: function (result) {
+                  console.log(result);
+                  el.innerHTML = result[0].label;
+              },
+              id: 'picker'
+          });
+      });
+    </script>
   <script type="text/javascript" src="./js/app.js"></script></body>
 </html>

@@ -2753,7 +2753,7 @@ html *, body * {
       position: absolute;
       top: -5px;
       width: 100%;
-      background: url(./images/icon-9.png) repeat-x;
+      background: url(../images/icon-9.png) repeat-x;
       background-size: 14px auto;
       padding-top: 50px; }
 
@@ -2872,7 +2872,7 @@ html *, body * {
       line-height: 55px;
       font-size: 14px;
       text-align: center;
-      background: url(./images/icon-10.png) no-repeat right center;
+      background: url(../images/icon-10.png) no-repeat right center;
       background-size: 12px auto; }
 
 .s-list .weui-media-box__hd {
@@ -3146,7 +3146,7 @@ html *, body * {
       color: #fff; }
 
 .qrcode {
-  background: url(./images/qrcode.jpg) no-repeat;
+  background: url(../images/qrcode.jpg) no-repeat;
   height: 100vh;
   background-size: cover; }
 
@@ -3321,7 +3321,7 @@ html *, body * {
     margin-top: 40px; }
 
 .tao {
-  background-image: url(./images/b9.jpg);
+  background-image: url(../images/b9.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 50px 14px 0 14px; }
@@ -3375,10 +3375,10 @@ html *, body * {
         margin: 0 4px; }
 
 .tao-jichu {
-  background-image: url(./images/b10.jpg); }
+  background-image: url(../images/b10.jpg); }
 
 .tao-shengji {
-  background-image: url(./images/b11.jpg); }
+  background-image: url(../images/b11.jpg); }
 
 .sorry {
   position: absolute;
@@ -3572,6 +3572,19 @@ html *, body * {
 
 .write-info .weui-label {
   color: #4a4646; }
+
+.write-info .select-area-menus {
+  outline: 0;
+  background-color: transparent;
+  width: 100%;
+  font-size: inherit;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #efeff0;
+  margin-bottom: 10px;
+  padding-left: 15px; }
 
 .self-top {
   -ms-flex-item-align: start;
