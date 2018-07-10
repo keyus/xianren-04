@@ -1,0 +1,32 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('我的套餐')
+
+    div.ad-4
+        img(src="./images/b12.jpg")
+    div.weui-cells.rlist.mytaos
+        a.weui-cell.weui-cell_access
+            div.weui-cell__bd.weui-cell_primary
+                span [洗车] 川BS34567
+                p
+                    img(src='./images/icon-20.png')
+                    label 2018/78/2 16:345
+            span.weui-cell__ft 基础套餐
+        a.weui-cell.weui-cell_access
+            div.weui-cell__bd.weui-cell_primary
+                span [洗车] 川BS34567
+                p
+                    img(src='./images/icon-20.png')
+                    label 2018/78/2 16:345
+            span.weui-cell__ft 基础套餐
+        a.weui-cell.weui-cell_access
+            div.weui-cell__bd.weui-cell_primary
+                span [洗车] 川BS34567
+                p
+                    img(src='./images/icon-20.png')
+                    label 2018/78/2 16:345
+            span.weui-cell__ft 基础套餐
+
+    +tabbar

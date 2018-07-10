@@ -1,87 +1,35 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
+    +topbar('消费记录')
 
-    div.app
-        div.index-notice
-            img(src='./images/index-notice.png')
+    div.rmenus.border-bottom
+        a.active 全部记录
+        a 洗车记录
+        a 保养记录
+        a 保险记录
+    div.weui-cells.rlist
+        a.weui-cell.weui-cell_access
+            div.weui-cell__hd(style="border:1px solid #1e88ca")
+                img(src="./images/icon-17.png")
+            div.weui-cell__bd.weui-cell_primary
+                span [洗车] 川BS34567
+                p 2018/78/2 16:345
+            span.weui-cell__ft
+        a.weui-cell.weui-cell_access
+            div.weui-cell__hd(style="border:1px solid #ea585b")
+                img(src="./images/icon-18.png")
+            div.weui-cell__bd.weui-cell_primary
+                span [洗车] 川BS34567
+                p 2018/78/2 16:345
+            span.weui-cell__ft
+        a.weui-cell.weui-cell_access
+            div.weui-cell__hd(style="border:1px solid #fac100")
+                img(src="./images/icon-19.png")
+            div.weui-cell__bd.weui-cell_primary
+                span [洗车] 川BS34567
+                p 2018/78/2 16:345
+            span.weui-cell__ft
 
-        div.index-menu
-            a.index-menu-m
-                span.title M币
-                span.num 10000.00
-            a.index-menu-q
-                span.title Q种子
-                span.num 10000.00
-            a.index-menu-b
-                span.title 波特种子
-                span.num 10000.00
-
-        div.index-cell
-            ul
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell1.png")
-                        span 交易大厅
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell2.png")
-                        span 我的精灵
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell3.png")
-                        span M币明细
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell4.png")
-                        span Q种子转帐
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell5.png")
-                        span Q种子明细
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell6.png")
-                        span 团队中心
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell7.png")
-                        span 公告中心
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell8.png")
-                        span 联系客服
-                li
-                    a
-                        span.img
-                            img(src="./images/index-cell9.png")
-                        span 退出
-
-
-
-        div.h80
-
-    div.pop-layer
-        div.rel
-            div.pop-box
-                div.pop-top
-                    h2 最新公告
-                    a.close(href="javascript:;" onclick="javascript: document.body.removeChild(this.parentNode.parentNode.parentNode.parentNode);")
-                        img(src='./images/close.png' alt="关闭")
-                div.pop-mid
-                    div.title 【系统名字】某某系统上线
-                    div.time 2017/08/15　10:50:25
-                    div.content 最新活动内容通知信息,最新活动内容 通知信息最新活动内容通知信息最新活动 内容通知信息.最新活动内容通知信息,最新活动内容 通知信息最新活动内容通知信息最新活动 内容通知信息.最新活动内容通知信息,最新活动内容 通知信息最新活动内容通知信息最新活动 内容通知信息.最新活动内容通知信息,最新活动内容 通知信息最新活动内容通知信息最新活动 内容通知信息.
-                div.pop-bottom
-
-    +tpl-tool-bar
-
+    +tabbar

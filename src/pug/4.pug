@@ -1,10 +1,11 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
-    +tpl-top-bar('公告中心')
-    div.h80
-    +tpl-notice-list
-    div.h80
-    +tpl-tool-bar
+    +topbar('保险')
 
+    div.view-btn
+        a.weui-btn.view-price() 查看报价
+        a.weui-btn() 补差价100元
+
+    +tabbar

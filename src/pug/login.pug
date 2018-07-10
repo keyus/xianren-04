@@ -1,0 +1,23 @@
+extends share/layouts
+include share/module
+
+block content
+    div.login
+        div.logo
+            img(src='./images/logo.png')
+
+        div.login-from
+            div.login-form-item
+                label
+                    img(src="./images/icon-15.png")
+                span
+                    input(placeholder="请输入帐号")
+            div.login-form-item
+                label
+                    img(src="./images/icon-16.png")
+                span
+                    input(placeholder="输入密码")
+            div.login-btn
+                button 登录
+            div.login-forget
+                a 忘记密码？

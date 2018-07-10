@@ -1,12 +1,54 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
-    +tpl-top-bar
-    div.h80
-    +tpl-line-text
-    +tpl-line-menu
-    +tpl-list-icon
-    div.h80
-    +tpl-tool-bar
+    div.index-banner
+        img(src='./images/b1.jpg')
 
+    div.weui-grids.index-menus
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-1.png')
+            p.weui-grid__label 我的油卡
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-2.png')
+            p.weui-grid__label 我要洗车
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-3.png')
+            p.weui-grid__label 违章查询
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-4.png')
+            p.weui-grid__label 紧急救援
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-5.png')
+            p.weui-grid__label 保险服务
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-6.png')
+            p.weui-grid__label 机场停车
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-7.png')
+            p.weui-grid__label 咨询客服
+        a.weui-grid
+            div.weui-grid__icon
+                img(src='./images/icon-8.png')
+            p.weui-grid__label 保养维修
+
+    div.space-10
+    div.index-ad2
+        img(src='./images/b2.jpg')
+    div.space-10
+    div.line-title 选择套餐
+    div.index-list
+        span
+            img(src='./images/b3.jpg')
+        span
+            img(src='./images/b4.jpg')
+        span
+            img(src='./images/b5.jpg')
+    +tabbar

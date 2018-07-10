@@ -1,0 +1,22 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('申请成为推广人')
+
+    div.sinput
+        i ￥
+        span 10000.00元
+
+    div.select-area
+        span 选择地区
+        select.weui-select
+            option(selected="" value="1") 省市区
+    div.stext 当前剩余
+        span 128
+        | 名
+
+    div.sbtn
+        button 立刻支付
+
+    +tabbar

@@ -1,13 +1,8 @@
 @import "share/base";
-@import "module";
 @import "style";
-@import "message";
 
 body{
   background: #fff;
-  background-image: url("../images/bg.jpg");
-  background-size: cover;
-  background-repeat: repeat-y;
 }
 
 html,body {

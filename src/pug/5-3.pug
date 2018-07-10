@@ -1,0 +1,30 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('洗车')
+
+    div.filter-bar.border-bottom
+        div.filter-bar-item
+            span.filter-bar-is 四川
+        div.filter-bar-item
+            span.filter-bar-is 绵阳
+        div.filter-bar-item
+            span.filter-bar-is 涪城
+
+    div.toa
+        div.toast
+            h5.border-bottom 洗车
+                a
+                    img(src="./images/icon-14.png")
+            div.toast-mid
+                div.toast-line-text
+                    label 本周免费清洗次数已用！
+                    span 是否自费清洗
+                div.toast-line-btn
+                    a.enter 是
+                    a 否
+
+    +list-1
+    +tabbar
+

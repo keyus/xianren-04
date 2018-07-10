@@ -1,0 +1,67 @@
+mixin topbar(title)
+    div.topbar
+        h1 #{title || '标题'}
+        span.left
+            i.back
+    div.topbar-space
+
+mixin tabbar
+    div.tabbar-space
+    div.weui-tabbar.global-tabbar
+        a.weui-tabbar__item.weui-bar__item_on
+            span(style="display: inline-block;position: relative;")
+                img.weui-tabbar__icon(src="./images/tabbar-1-active.png")
+                //img.weui-tabbar__icon(src="./images/tabbar-1.png")
+            p.weui-tabbar__label 首页
+        a.weui-tabbar__item.weui-bar__item_on
+            span(style="display: inline-block;position: relative;")
+                img.weui-tabbar__icon(src="./images/tabbar-2.png")
+                //img.weui-tabbar__icon(src="./images/tabbar-2-active.png")
+            p.weui-tabbar__label 套餐
+        a.weui-tabbar__item.weui-bar__item_on
+            span(style="display: inline-block;position: relative;")
+                img.weui-tabbar__icon(src="./images/tabbar-3.png")
+                //img.weui-tabbar__icon(src="./images/tabbar-3-active.png")
+            p.weui-tabbar__label 我的
+
+mixin list-1
+    div.weui-panel.weui-panel_access.s-list
+        div.weui-panel__bd
+            a.weui-media-box.weui-media-box_appmsg
+                div.weui-media-box__hd(style="background-image: url('./images/b6.jpg');")
+                div.weui-media-box__bd
+                    div.r-title
+                        h4.weui-media-box__title 奔驰4S店(龙泉)
+                            i 预约
+                        span.size 3.2KM
+                    div.stars
+                        span.img
+                            img(src='./images/star.png')
+                            img(src='./images/star.png')
+                            img(src='./images/star.png')
+                            img(src='./images/star.png')
+                            img(src='./images/star-1.png')
+                        span.num 4.5分
+                        span.gt
+                    p.list-desc 电话: 02816-5121
+                    p.list-desc 地址: 四川嘎嘎孙右职
+            a.weui-media-box.weui-media-box_appmsg
+                div.weui-media-box__hd(style="background-image: url('./images/b6.jpg');")
+                div.weui-media-box__bd
+                    div.r-title
+                        h4.weui-media-box__title 奔驰4S店(龙泉)
+                            i 预约
+                        span.size 3.2KM
+                    div.stars
+                        span.img
+                            img(src='./images/star.png')
+                            img(src='./images/star.png')
+                            img(src='./images/star.png')
+                            img(src='./images/star.png')
+                            img(src='./images/star-1.png')
+                        span.num 4.5分
+                        span.gt
+                    p.list-desc 电话: 02816-5121
+                    p.list-desc 地址: 四川嘎嘎孙右职
+
+

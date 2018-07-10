@@ -5,54 +5,40 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.1.3/weui.min.js"></script>
     <title>主页平台</title>
   <link href="/css/app.css" rel="stylesheet"></head>
   <body>
-    <div class="top-bar flex-center">
-      <div class="rel">
-        <h1 class="title">M币明细</h1>
-        <div class="back"><a><img src="./images/back.png" alt="返回"></a></div>
-      </div>
-    </div>
-    <div class="h80"></div>
-    <div class="line-text"><span>推荐收益: 5236元</span><span>升级收益: 55236元</span><span>总团队: 510人</span></div>
-    <div class="line-menu">
-      <div class="rel">
-        <div class="abs"><a><span>全部</span></a><a><span>静态收益</span></a><a><span>推荐收益</span></a><a class="active"><span>升级收益</span></a></div>
-      </div>
-    </div>
-    <div class="list-icon">
-      <ul>
-        <li><a href="javascript:;">
-            <div class="icon"><img src="./images/list-icon1.png"></div>
-            <div class="list-icon-label">
-              <div class="title">静态收益</div>
-              <div class="time-area"><span>2017/09/18</span><span>08:59:33</span></div>
-            </div>
-            <div class="list-icon-right">
-              <div class="money">+100.00</div>
-            </div></a></li>
-        <li><a href="javascript:;">
-            <div class="icon"><img src="./images/list-icon2.png"></div>
-            <div class="list-icon-label">
-              <div class="title">推荐收益</div>
-              <div class="time-area"><span>2017/09/18</span><span>08:59:33</span></div>
-            </div>
-            <div class="list-icon-right">
-              <div class="money">+100.00</div>
-            </div></a></li>
-        <li><a href="javascript:;">
-            <div class="icon"><img src="./images/list-icon3.png"></div>
-            <div class="list-icon-label">
-              <div class="title">升级收益</div>
-              <div class="time-area"><span>2017/09/18</span><span>08:59:33</span></div>
-            </div>
-            <div class="list-icon-right">
-              <div class="money">+100.00</div>
-            </div></a></li>
-      </ul>
-    </div>
-    <div class="h80"></div>
-    <div class="tool-bar flex-center"><a href="javascript:;"><img src="./images/icon-fire.png" alt="我的"><span>我的</span></a><a href="javascript:;"><img src="./images/icon-message.png" alt="信息"><span>信息</span></a><a href="javascript:;"><img src="./images/icon-kefu.png" alt="客服"><span>客服</span></a><a href="javascript:;"><img src="./images/icon-quit.png" alt="退出"><span>退出</span></a></div>
+    <div class="index-banner"><img src="./images/b1.jpg"></div>
+    <div class="weui-grids index-menus"><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-1.png"></div>
+        <p class="weui-grid__label">我的油卡</p></a><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-2.png"></div>
+        <p class="weui-grid__label">我要洗车</p></a><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-3.png"></div>
+        <p class="weui-grid__label">违章查询</p></a><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-4.png"></div>
+        <p class="weui-grid__label">紧急救援</p></a><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-5.png"></div>
+        <p class="weui-grid__label">保险服务</p></a><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-6.png"></div>
+        <p class="weui-grid__label">机场停车</p></a><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-7.png"></div>
+        <p class="weui-grid__label">咨询客服</p></a><a class="weui-grid">
+        <div class="weui-grid__icon"><img src="./images/icon-8.png"></div>
+        <p class="weui-grid__label">保养维修</p></a></div>
+    <div class="space-10"></div>
+    <div class="index-ad2"><img src="./images/b2.jpg"></div>
+    <div class="space-10"></div>
+    <div class="line-title">选择套餐</div>
+    <div class="index-list"><span><img src="./images/b3.jpg"></span><span><img src="./images/b4.jpg"></span><span><img src="./images/b5.jpg"></span></div>
+    <div class="tabbar-space"></div>
+    <div class="weui-tabbar global-tabbar"><a class="weui-tabbar__item weui-bar__item_on"><span style="display: inline-block;position: relative;"><img class="weui-tabbar__icon" src="./images/tabbar-1-active.png">
+          <!--img.weui-tabbar__icon(src="./images/tabbar-1.png")--></span>
+        <p class="weui-tabbar__label">首页</p></a><a class="weui-tabbar__item weui-bar__item_on"><span style="display: inline-block;position: relative;"><img class="weui-tabbar__icon" src="./images/tabbar-2.png">
+          <!--img.weui-tabbar__icon(src="./images/tabbar-2-active.png")--></span>
+        <p class="weui-tabbar__label">套餐</p></a><a class="weui-tabbar__item weui-bar__item_on"><span style="display: inline-block;position: relative;"><img class="weui-tabbar__icon" src="./images/tabbar-3.png">
+          <!--img.weui-tabbar__icon(src="./images/tabbar-3-active.png")--></span>
+        <p class="weui-tabbar__label">我的</p></a></div>
   <script type="text/javascript" src="/js/app.js"></script></body>
 </html>

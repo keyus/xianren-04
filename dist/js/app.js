@@ -2,8 +2,8 @@
 /******/ 	function hotDisposeChunk(chunkId) {
 /******/ 		delete installedChunks[chunkId];
 /******/ 	}
-/******/ 	var parentHotUpdateCallback = this["webpackHotUpdate"];
-/******/ 	this["webpackHotUpdate"] = 
+/******/ 	var parentHotUpdateCallback = window["webpackHotUpdate"];
+/******/ 	window["webpackHotUpdate"] = 
 /******/ 	function webpackHotUpdateCallback(chunkId, moreModules) { // eslint-disable-line no-unused-vars
 /******/ 		hotAddUpdateChunk(chunkId, moreModules);
 /******/ 		if(parentHotUpdateCallback) parentHotUpdateCallback(chunkId, moreModules);
@@ -15,6 +15,7 @@
 /******/ 		script.type = "text/javascript";
 /******/ 		script.charset = "utf-8";
 /******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + hotCurrentHash + ".hot-update.js";
+/******/ 		;
 /******/ 		head.appendChild(script);
 /******/ 	}
 /******/ 	
@@ -60,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f5c7fa857de13f988065"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "46fca91ebaff8920fbc4"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -733,7 +734,9 @@
 
 __webpack_require__(1);
 
-__webpack_require__(31);
+__webpack_require__(2);
+
+__webpack_require__(9);
 
 /***/ }),
 /* 1 */
@@ -743,184 +746,106 @@ __webpack_require__(31);
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/topbg.jpg";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/toptitle.png";
+module.exports = __webpack_require__.p + "images/icon-9.png";
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/line-text.png";
+module.exports = __webpack_require__.p + "images/icon-10.png";
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/menu2.jpg";
+module.exports = __webpack_require__.p + "images/qrcode.jpg";
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/menu-item.png";
+module.exports = __webpack_require__.p + "images/b9.jpg";
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/input.png";
+module.exports = __webpack_require__.p + "images/b10.jpg";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/btn-enter.png";
+module.exports = __webpack_require__.p + "images/b11.jpg";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/qizi.png";
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/qi-menu.png";
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/qi-menu-active.png";
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/tradebg.jpg";
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/user-input.png";
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/btn-small.png";
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/loginbg.jpg";
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/login-input.png";
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/indexbg.jpg";
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-notice.png";
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-menu-bg.png";
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-menu1.jpg";
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-menu2.jpg";
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-menu3.jpg";
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell-bg.png";
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell.png";
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/pop-top.png";
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/pop-bottom.png";
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/pop-mid.png";
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon-me1.png";
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon-me2.png";
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/bg.jpg";
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
+
+__webpack_require__(10);
+
+__webpack_require__(11);
+
+__webpack_require__(12);
+
+__webpack_require__(13);
+
+__webpack_require__(14);
+
+__webpack_require__(15);
+
+__webpack_require__(16);
+
+__webpack_require__(17);
+
+__webpack_require__(6);
+
+__webpack_require__(7);
+
+__webpack_require__(8);
+
+__webpack_require__(18);
+
+__webpack_require__(19);
+
+__webpack_require__(20);
+
+__webpack_require__(21);
+
+__webpack_require__(22);
+
+__webpack_require__(23);
+
+__webpack_require__(24);
+
+__webpack_require__(25);
+
+__webpack_require__(26);
+
+__webpack_require__(27);
+
+__webpack_require__(3);
+
+__webpack_require__(4);
+
+__webpack_require__(28);
+
+__webpack_require__(29);
+
+__webpack_require__(30);
+
+__webpack_require__(31);
 
 __webpack_require__(32);
 
@@ -932,21 +857,9 @@ __webpack_require__(35);
 
 __webpack_require__(36);
 
-__webpack_require__(30);
-
 __webpack_require__(37);
 
-__webpack_require__(2);
-
-__webpack_require__(3);
-
-__webpack_require__(4);
-
-__webpack_require__(6);
-
 __webpack_require__(38);
-
-__webpack_require__(5);
 
 __webpack_require__(39);
 
@@ -964,309 +877,245 @@ __webpack_require__(45);
 
 __webpack_require__(46);
 
+__webpack_require__(5);
+
 __webpack_require__(47);
-
-__webpack_require__(7);
-
-__webpack_require__(13);
-
-__webpack_require__(8);
 
 __webpack_require__(48);
 
-__webpack_require__(11);
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(10);
+module.exports = __webpack_require__.p + "images/b1.jpg";
 
-__webpack_require__(9);
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(12);
+module.exports = __webpack_require__.p + "images/b2.jpg";
 
-__webpack_require__(14);
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(15);
+module.exports = __webpack_require__.p + "images/b3.jpg";
 
-__webpack_require__(49);
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(50);
+module.exports = __webpack_require__.p + "images/b4.jpg";
 
-__webpack_require__(16);
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28);
+module.exports = __webpack_require__.p + "images/b5.jpg";
 
-__webpack_require__(29);
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(51);
+module.exports = __webpack_require__.p + "images/b6.jpg";
 
-__webpack_require__(52);
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(53);
+module.exports = __webpack_require__.p + "images/b7.jpg";
 
-__webpack_require__(54);
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(55);
+module.exports = __webpack_require__.p + "images/b8.jpg";
 
-__webpack_require__(56);
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(57);
+module.exports = __webpack_require__.p + "images/b12.jpg";
 
-__webpack_require__(17);
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(18);
+module.exports = __webpack_require__.p + "images/b13.jpg";
 
-__webpack_require__(20);
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(21);
+module.exports = __webpack_require__.p + "images/icon-1.png";
 
-__webpack_require__(22);
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(19);
+module.exports = __webpack_require__.p + "images/icon-2.png";
 
-__webpack_require__(24);
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(23);
+module.exports = __webpack_require__.p + "images/icon-3.png";
 
-__webpack_require__(58);
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(59);
+module.exports = __webpack_require__.p + "images/icon-4.png";
 
-__webpack_require__(60);
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(61);
+module.exports = __webpack_require__.p + "images/icon-5.png";
 
-__webpack_require__(62);
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(63);
+module.exports = __webpack_require__.p + "images/icon-6.png";
 
-__webpack_require__(64);
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(65);
+module.exports = __webpack_require__.p + "images/icon-7.png";
 
-__webpack_require__(66);
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(26);
+module.exports = __webpack_require__.p + "images/icon-8.png";
 
-__webpack_require__(27);
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(25);
+module.exports = __webpack_require__.p + "images/icon-11.png";
 
-__webpack_require__(67);
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/icon-12.png";
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/icon-13.png";
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/icon-14.png";
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-fire.png";
+module.exports = __webpack_require__.p + "images/icon-15.png";
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-kefu.png";
+module.exports = __webpack_require__.p + "images/icon-16.png";
 
 /***/ }),
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-message.png";
+module.exports = __webpack_require__.p + "images/icon-17.png";
 
 /***/ }),
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-quit.png";
+module.exports = __webpack_require__.p + "images/icon-18.png";
 
 /***/ }),
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/back.png";
+module.exports = __webpack_require__.p + "images/icon-19.png";
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/bg2.jpg";
+module.exports = __webpack_require__.p + "images/icon-20.png";
 
 /***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/menu.png";
+module.exports = __webpack_require__.p + "images/tabbar-1.png";
 
 /***/ }),
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/list-icon1.png";
+module.exports = __webpack_require__.p + "images/tabbar-2.png";
 
 /***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/list-icon2.png";
+module.exports = __webpack_require__.p + "images/tabbar-3.png";
 
 /***/ }),
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/list-icon3.png";
+module.exports = __webpack_require__.p + "images/tabbar-1-active.png";
 
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-active.png";
+module.exports = __webpack_require__.p + "images/tabbar-2-active.png";
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-person-in.png";
+module.exports = __webpack_require__.p + "images/tabbar-3-active.png";
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-person-out.png";
+module.exports = __webpack_require__.p + "images/wait.png";
 
 /***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-system-in.png";
+module.exports = __webpack_require__.p + "images/star.png";
 
 /***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/icon-system-out.png";
+module.exports = __webpack_require__.p + "images/star-1.png";
 
 /***/ }),
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/zhuan.png";
+module.exports = __webpack_require__.p + "images/logo.png";
 
 /***/ }),
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/view.png";
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon-user.png";
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon-password.png";
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon-time.png";
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/icon-chuizi.png";
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/active.png";
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/inactive.png";
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/xin.png";
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/bit.png";
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/bitdai.png";
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell1.png";
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell2.png";
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell3.png";
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell4.png";
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell5.png";
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell6.png";
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell7.png";
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell8.png";
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/index-cell9.png";
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/close.png";
+module.exports = __webpack_require__.p + "images/avatar.png";
 
 /***/ })
 /******/ ]);

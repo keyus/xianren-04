@@ -1,0 +1,70 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('保养')
+
+    div.filter-bar.border-bottom
+        div.filter-bar-item
+            span.filter-bar-is 四川
+        div.filter-bar-item
+            span.filter-bar-is 绵阳
+        div.filter-bar-item
+            span.filter-bar-is 涪城
+
+    div.toa
+        div.toast
+            h5.border-bottom 预约
+                a
+                    img(src="./images/icon-14.png")
+            div.toast-mid
+                div.toast-item
+                    p
+                        label 电话:
+                        span.tel
+                            em 028-5143141
+                    p
+                        label 地址:
+                        span 四川省啊叵顺兴嘎嘎压路机需要哈士奇厅老大哥老大哥老大哥
+
+                div.toast-time
+                    span 预约上午
+                    label.datePicker 2018/7/7
+                div.toast-handle
+                    a.active 上午
+                    a 下午
+                div.toast-enter
+                    a 预约
+
+                div.toast-bottom
+                    a
+                        i
+                            img(src="./images/icon-11.png")
+                        span 一键拨号
+                    a
+                        i
+                            img(src="./images/icon-12.png")
+                        span 一键导航
+    +list-1
+    +tabbar
+
+    script.
+        document.querySelector('.datePicker').addEventListener('click', function (e) {
+            var el = e.target;
+            var start = '2016-12-29';
+            var end = '2030-12-29';
+            weui.datePicker({
+                start: start,
+                end: end,
+                cron: '* */2 0',
+                defaultValue: [2017, 7, 9],
+                onChange: function (result) {
+                    el.innerHTML = result[0].value+'/'+result[1].value+'/'+result[2].value;
+                    console.log(result);
+                },
+                onConfirm: function (result) {
+                    el.innerHTML = result[0].value+'/'+result[1].value+'/'+result[2].value;
+                },
+                id: 'datePicker'
+            });
+        });

@@ -1,33 +1,6 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
-    +tpl-top-bar('交易大厅')
-    div.h80
-    div.trade
-        div.trade-top
-            div.trade-top-bg
-            div.trade-top-menu
-                a.buy.active
-                    span 买入M币
-                a.sell
-                    span 卖出M币
-        div.trade-form
-            div.trade-form-bg
-                div.trade-form-item
-                    div.label 当前价格:
-                    div.input
-                        input(type='text' placeholder='')
-                div.trade-form-item
-                    div.label 买入数量:
-                    div.input
-                        input(type='text' placeholder='')
-                div.trade-form-item
-                    div.label 总计金额:
-                    div.input
-                        input(type='text' placeholder='')
-                div.trade-form-submit
-                    a.enter() 确认买入
-
-    +tpl-tool-bar
+    div.qrcode
 

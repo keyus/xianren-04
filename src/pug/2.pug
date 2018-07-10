@@ -1,11 +1,68 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
-    +tpl-top-bar('Q种子名细')
-    div.h80
-    +tpl-line-text
-    +tpl-list-icon1
-    div.h80
-    +tpl-tool-bar
+    +topbar('保险')
+    div.sbanner
+        img(src="./images/b7.jpg")
 
+    div.sform
+        div.sfrom-top
+            span
+        div.sform-box
+            h2 基础保险
+            div.sform-item
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 交强险
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 车船税
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 车损险
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 三者险
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 座位险
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 不计免赔险
+
+        div.sform-box.sform-box-2
+            h2 自选保险
+            div.sform-item
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类1
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类2
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类1
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类2
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类1
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类2
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类1
+                label
+                    input(type="checkbox" class="weui-agree__checkbox")
+                    span 可选保险分类2
+
+
+
+
+        div.sform-btn
+            a.weui-btn 提交
+
+    +tabbar

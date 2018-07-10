@@ -1,35 +1,43 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
-    +tpl-top-bar('我的精灵')
-    div.h50
+    +topbar('升级套餐')
 
-    //也许这是一张背景,你可放入一背图片
-    div.mycenter(style="background-image: url('')")
+    div.tao.tao-shengji
+        div.taobox
+            h5 升级套餐服务项目
+            div.weui-cells
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 加油
+                    div.weui-cell__rt 500元/月
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 保养(需预约)
+                    div.weui-cell__rt 2次/年
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 洗车
+                    div.weui-cell__rt 1次/周
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 保险
+                    div.weui-cell__rt.moeny 5000元
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 救援
+                    div.weui-cell__ft 查看
+            button 支付 22990元
+            div.day 保险剩余
+                span 1890
+                | 天点亮
 
-    div.mycenter-list
-        div.mycenter-list-item
-            img(src='./images/zhuan.png')
-            span
-                label 今日挖矿 :
-                | 5456123
-        div.mycenter-list-item
-            img(src='./images/xin.png')
-            span
-                label 精灵等级 :
-                | 等级一
-        div.mycenter-list-item
-            img(src='./images/bit.png')
-            span
-                label 已挖矿数 :
-                | 456123
-        div.mycenter-list-item
-            img(src='./images/bitdai.png')
-            span
-                label 剩余数量 :
-                | 5121
+    div.toa
+        div.toast
+            h5.border-bottom 豪华套餐
+                a
+                    img(src="./images/icon-14.png")
+            div.toast-mid
+                div.toast-line-text
+                    span 请补充资料
+                div.toast-line-btn
+                    a.enter 是
+                    a 否
 
-    div.h80
-    +tpl-tool-bar
-
+    +tabbar

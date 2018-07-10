@@ -1,0 +1,52 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('我的')
+
+    div.my
+        div.weui-cells.rlist
+            a.weui-cell.weui-cell_access
+                div.weui-cell__hd
+                    img(src="./images/avatar.png")
+                div.weui-cell__bd.weui-cell_primary
+                    span 张三三
+                    p 180151212313
+                span.weui-cell__ft
+                    em 25556
+                    | 推荐积分
+
+
+        div.my-tag
+            span 省代理
+            span |
+            span 市代理
+            span |
+            span 实体店
+
+    div.my-list
+        div.weui-cells.rlist
+            a.weui-cell.weui-cell_access
+                div.weui-cell__bd.weui-cell_primary
+                    span 申请成为推广人
+                span.weui-cell__ft
+            a.weui-cell.weui-cell_access
+                div.weui-cell__bd.weui-cell_primary
+                    span 我的二维码
+                span.weui-cell__ft
+    div.space-10
+    div.my-list
+        div.weui-cells.rlist
+            a.weui-cell.weui-cell_access
+                div.weui-cell__bd.weui-cell_primary
+                    span 消费记录
+                span.weui-cell__ft
+            a.weui-cell.weui-cell_access
+                div.weui-cell__bd.weui-cell_primary
+                    span 商户中心
+                span.weui-cell__ft
+            a.weui-cell.weui-cell_access
+                div.weui-cell__bd.weui-cell_primary
+                    span 退出登录
+                span.weui-cell__ft
+    +tabbar

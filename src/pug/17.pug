@@ -1,0 +1,23 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('加油')
+    div.ad-4
+        img(src="./images/b13.jpg")
+    div.weui-cells.myinfo
+        a.weui-cell.weui-cell_access
+            div.weui-cell__hd 姓名：
+            div.weui-cell__bd.weui-cell_primary 张三三
+        a.weui-cell.weui-cell_access
+            div.weui-cell__hd 电话：
+            div.weui-cell__bd.weui-cell_primary 张三三
+        a.weui-cell.weui-cell_access
+            div.weui-cell__hd 地址：
+            div.weui-cell__bd.weui-cell_primary 张三三
+        a.weui-cell.weui-cell_access
+            div.weui-cell__hd 车牌：
+            div.weui-cell__bd.weui-cell_primary 张三三
+
+
+    +tabbar

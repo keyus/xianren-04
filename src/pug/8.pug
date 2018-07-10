@@ -1,21 +1,20 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
-    +tpl-top-bar('帐户信息')
-    div.h80
+    +topbar('商户中心')
+    div.ad-3
+        img(src="./images/b8.jpg")
+    div.weui-cells.myinfo.shinfo
+        a.weui-cell.weui-cell_access
+            div.weui-cell__bd.weui-cell_primary 洗车
+            span.weui-cell__ft
+        a.weui-cell.weui-cell_access
+            div.weui-cell__bd.weui-cell_primary 保养
+            span.weui-cell__ft
+        a.weui-cell.weui-cell_access
+            div.weui-cell__bd.weui-cell_primary 记录
+            span.weui-cell__ft
 
-    div.user-form
-        div.user-form-item
-            input(type='text' placeholder="输入微信支付帐号")
-        div.user-form-item
-            input(type='text' placeholder="输入支付宝帐号")
-        div.user-form-item
-            input(type='text' placeholder="输入开户银行")
-        div.user-form-item
-            input(type='text' placeholder="输入银行卡号")
-        div.user-form-submit
-            a.enter 确 认
 
-    +tpl-tool-bar
-
+    +tabbar

@@ -1,28 +1,30 @@
 extends share/layouts
-include  module/template
+include share/module
 
 block content
-    +tpl-top-bar('联系客服')
-    div.h80
+    +topbar('基础套餐')
 
-    div.message-list
-        div.message-item
-            div.personimg
-                span.icon-toubugerenzhongxin
-            div.message-item-box hi,你他妈在干啥？
-                span.shape
-
-        div.message-item.message-right
-            div.personimg
-                span.icon-kefu
-            div.message-item-box 妹的，云你妹的
-                span.shape
-
-
-    div.memeber-input
-        textarea(placeholder="请输入留言")
-    div.message-list-enter
-        a(href="javascript:;") 确认发布
-
-    +tpl-tool-bar
-
+    div.tao.tao-jichu
+        div.taobox
+            h5 基础套餐服务项目
+            div.weui-cells
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 加油
+                    div.weui-cell__rt 500元/月
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 保养(需预约)
+                    div.weui-cell__rt 2次/年
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 洗车
+                    div.weui-cell__rt 1次/周
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 保险
+                    div.weui-cell__rt.moeny 5000元
+                a.weui-cell.weui-cell_access
+                    div.weui-cell__bd.weui-cell_primary 救援
+                    div.weui-cell__ft 查看
+            button 支付 22990元
+            div.day 保险剩余
+                span 1890
+                | 天点亮
+    +tabbar

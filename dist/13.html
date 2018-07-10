@@ -5,29 +5,48 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.1.3/weui.min.js"></script>
     <title>主页平台</title>
   <link href="/css/app.css" rel="stylesheet"></head>
   <body>
-    <div class="top-bar flex-center">
-      <div class="rel">
-        <h1 class="title">我的精灵</h1>
-        <div class="back"><a><img src="./images/back.png" alt="返回"></a></div>
+    <div class="topbar">
+      <h1>升级套餐</h1><span class="left"><i class="back"></i></span>
+    </div>
+    <div class="topbar-space"></div>
+    <div class="tao tao-shengji">
+      <div class="taobox">
+        <h5>升级套餐服务项目</h5>
+        <div class="weui-cells"><a class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd weui-cell_primary">加油</div>
+            <div class="weui-cell__rt">500元/月</div></a><a class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd weui-cell_primary">保养(需预约)</div>
+            <div class="weui-cell__rt">2次/年</div></a><a class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd weui-cell_primary">洗车</div>
+            <div class="weui-cell__rt">1次/周</div></a><a class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd weui-cell_primary">保险</div>
+            <div class="weui-cell__rt moeny">5000元</div></a><a class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd weui-cell_primary">救援</div>
+            <div class="weui-cell__ft">查看</div></a></div>
+        <button>支付 22990元</button>
+        <div class="day">保险剩余<span>1890</span>天点亮</div>
       </div>
     </div>
-    <div class="h50"></div>
-    <!--也许这是一张背景,你可放入一背图片-->
-    <div class="mycenter" style="background-image: url('');"></div>
-    <div class="mycenter-list">
-      <div class="mycenter-list-item"><img src="./images/zhuan.png"><span>
-          <label>今日挖矿 :</label>5456123</span></div>
-      <div class="mycenter-list-item"><img src="./images/xin.png"><span>
-          <label>精灵等级 :</label>等级一</span></div>
-      <div class="mycenter-list-item"><img src="./images/bit.png"><span>
-          <label>已挖矿数 :</label>456123</span></div>
-      <div class="mycenter-list-item"><img src="./images/bitdai.png"><span>
-          <label>剩余数量 :</label>5121</span></div>
+    <div class="toa">
+      <div class="toast">
+        <h5 class="border-bottom">豪华套餐<a><img src="./images/icon-14.png"></a></h5>
+        <div class="toast-mid">
+          <div class="toast-line-text"><span>请补充资料</span></div>
+          <div class="toast-line-btn"><a class="enter">是</a><a>否</a></div>
+        </div>
+      </div>
     </div>
-    <div class="h80"></div>
-    <div class="tool-bar flex-center"><a href="javascript:;"><img src="./images/icon-fire.png" alt="我的"><span>我的</span></a><a href="javascript:;"><img src="./images/icon-message.png" alt="信息"><span>信息</span></a><a href="javascript:;"><img src="./images/icon-kefu.png" alt="客服"><span>客服</span></a><a href="javascript:;"><img src="./images/icon-quit.png" alt="退出"><span>退出</span></a></div>
+    <div class="tabbar-space"></div>
+    <div class="weui-tabbar global-tabbar"><a class="weui-tabbar__item weui-bar__item_on"><span style="display: inline-block;position: relative;"><img class="weui-tabbar__icon" src="./images/tabbar-1-active.png">
+          <!--img.weui-tabbar__icon(src="./images/tabbar-1.png")--></span>
+        <p class="weui-tabbar__label">首页</p></a><a class="weui-tabbar__item weui-bar__item_on"><span style="display: inline-block;position: relative;"><img class="weui-tabbar__icon" src="./images/tabbar-2.png">
+          <!--img.weui-tabbar__icon(src="./images/tabbar-2-active.png")--></span>
+        <p class="weui-tabbar__label">套餐</p></a><a class="weui-tabbar__item weui-bar__item_on"><span style="display: inline-block;position: relative;"><img class="weui-tabbar__icon" src="./images/tabbar-3.png">
+          <!--img.weui-tabbar__icon(src="./images/tabbar-3-active.png")--></span>
+        <p class="weui-tabbar__label">我的</p></a></div>
   <script type="text/javascript" src="/js/app.js"></script></body>
 </html>

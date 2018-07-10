@@ -1,0 +1,28 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('重置密码')
+
+    div.weui-cells.weui-cells_form.register-form
+        div.weui-cell.weui-cell_vcode
+            div.weui-cell__hd
+                label.weui-label 手机号
+            div.weui-cell__bd
+                input.weui-input(type="tel" placeholder="请输入您的手机号")
+            div.weui-cell__ft
+                button.weui-vcode-btn 获取验证码
+        div.weui-cell
+            div.weui-cell__hd
+                label.weui-label 验证码
+            div.weui-cell__bd
+                input.weui-input(type="number" pattern="[0-9]*" placeholder="请输入验证码")
+        div.weui-cell
+            div.weui-cell__hd
+                label.weui-label 新密码
+            div.weui-cell__bd
+                input.weui-input(type="password" placeholder="请输入您的新密码")
+
+    div.register-btn
+        button 确认
+
