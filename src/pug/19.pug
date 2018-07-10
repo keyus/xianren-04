@@ -1,0 +1,49 @@
+extends share/layouts
+include share/module
+
+block content
+    +topbar('完善资料')
+
+    div.weui-cells.weui-cells_form.write-info
+        div.weui-cell
+            div.weui-cell__hd
+                label.weui-label 姓名：
+            div.weui-cell__bd
+                input.weui-input(placeholder="请输入您的姓名" type='text')
+        div.weui-cell
+            div.weui-cell__hd
+                label.weui-label 车牌：
+            div.weui-cell__bd
+                input.weui-input(placeholder="请输入您的车牌" type='text')
+        div.weui-cell
+            div.weui-cell__hd
+                label.weui-label 地址：
+            div.weui-cell__bd
+                input.weui-input(placeholder="请输入油卡收货地址" type='text')
+        div.weui-cell
+            div.weui-cell__hd.self-top
+                label.weui-label 服务点：
+            div.weui-cell__bd
+                select.weui-select
+                    option(value="") 省/市/区
+                select.weui-select
+                    option(value="") 高新4S奔驰店
+
+    div.uploadfile
+        div.weui-uploader__input-box
+            | 上传身份证正面
+            input.weui-uploader__input(type="file" accept="image/*")
+        div.weui-uploader__input-box
+            | 上传身份证反面
+            input.weui-uploader__input(type="file" accept="image/*")
+        div.weui-uploader__input-box
+            | 上传行驶证正面
+            input.weui-uploader__input(type="file" accept="image/*")
+        div.weui-uploader__input-box
+            | 上传行驶证反面
+            input.weui-uploader__input(type="file" accept="image/*")
+
+    div.sbtn
+        button 完成
+
+    +tabbar

@@ -30,7 +30,7 @@ config.entry   = {
 //配置输出，及路径
 config.output = {
     path        : path.resolve(__dirname,'./dist'),
-    publicPath  : '/',
+    publicPath  : './',
     filename    : "js/[name].js"
 };
 

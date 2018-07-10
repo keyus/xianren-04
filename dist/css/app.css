@@ -2753,7 +2753,7 @@ html *, body * {
       position: absolute;
       top: -5px;
       width: 100%;
-      background: url(/images/icon-9.png) repeat-x;
+      background: url(./images/icon-9.png) repeat-x;
       background-size: 14px auto;
       padding-top: 50px; }
 
@@ -2872,7 +2872,7 @@ html *, body * {
       line-height: 55px;
       font-size: 14px;
       text-align: center;
-      background: url(/images/icon-10.png) no-repeat right center;
+      background: url(./images/icon-10.png) no-repeat right center;
       background-size: 12px auto; }
 
 .s-list .weui-media-box__hd {
@@ -3146,7 +3146,7 @@ html *, body * {
       color: #fff; }
 
 .qrcode {
-  background: url(/images/qrcode.jpg) no-repeat;
+  background: url(./images/qrcode.jpg) no-repeat;
   height: 100vh;
   background-size: cover; }
 
@@ -3321,7 +3321,7 @@ html *, body * {
     margin-top: 40px; }
 
 .tao {
-  background-image: url(/images/b9.jpg);
+  background-image: url(./images/b9.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 50px 14px 0 14px; }
@@ -3375,10 +3375,10 @@ html *, body * {
         margin: 0 4px; }
 
 .tao-jichu {
-  background-image: url(/images/b10.jpg); }
+  background-image: url(./images/b10.jpg); }
 
 .tao-shengji {
-  background-image: url(/images/b11.jpg); }
+  background-image: url(./images/b11.jpg); }
 
 .sorry {
   position: absolute;
@@ -3565,6 +3565,36 @@ html *, body * {
     height: 40px;
     margin: 10px 0 20px 0;
     color: #9f9fa0; }
+
+.write-info .weui-select {
+  border: 1px solid #efeff0;
+  margin-bottom: 10px; }
+
+.write-info .weui-label {
+  color: #4a4646; }
+
+.self-top {
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.uploadfile {
+  padding: 20px 30px 0 30px; }
+
+.uploadfile .weui-uploader__input-box {
+    float: none;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: #676666;
+    border-color: #efeff0; }
+
+.uploadfile .weui-uploader__input-box:after, .uploadfile .weui-uploader__input-box:before {
+      display: none; }
+
+.uploadfile .weui-uploader__input-box .weui-uploader__input {
+      width: 100%; }
 
 body {
   background: #fff; }
